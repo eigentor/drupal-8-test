@@ -1,0 +1,23 @@
+uuid: e88f572d-a7fa-4c08-9792-4a2ff8932ea2
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_person_id
+    - node.type.people_import
+id: node.people_import.field_person_id
+field_name: field_person_id
+entity_type: node
+bundle: people_import
+label: Personen-ID
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

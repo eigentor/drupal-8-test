@@ -1,0 +1,27 @@
+uuid: 8e496c35-738c-478d-9577-8b704a0df8d5
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_gender
+field_name: field_gender
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Male
+      label: Männlich
+    -
+      value: Female
+      label: Weiblich
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

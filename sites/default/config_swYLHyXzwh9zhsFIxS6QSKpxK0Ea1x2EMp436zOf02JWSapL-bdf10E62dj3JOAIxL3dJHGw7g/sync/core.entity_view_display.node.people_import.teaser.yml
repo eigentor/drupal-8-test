@@ -1,0 +1,23 @@
+uuid: cd6d23ee-c52d-4a39-88af-9425498301fd
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.people_import.field_first_name
+    - field.field.node.people_import.field_last_name
+    - node.type.people_import
+  module:
+    - user
+id: node.people_import.teaser
+targetEntityType: node
+bundle: people_import
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_first_name: true
+  field_last_name: true
+  langcode: true

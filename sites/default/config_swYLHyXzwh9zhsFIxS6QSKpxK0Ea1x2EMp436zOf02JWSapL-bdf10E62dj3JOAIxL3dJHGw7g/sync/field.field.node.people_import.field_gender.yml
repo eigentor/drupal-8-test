@@ -1,0 +1,21 @@
+uuid: c413b987-6629-4f9e-a6b7-936be8569fc2
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gender
+    - node.type.people_import
+  module:
+    - options
+id: node.people_import.field_gender
+field_name: field_gender
+entity_type: node
+bundle: people_import
+label: Geschlecht
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

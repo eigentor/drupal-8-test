@@ -1,0 +1,5 @@
+name: FB JSON Import
+type: module
+description: JSON Import with Migrate module
+core: 8.x
+package: franke_bornberg

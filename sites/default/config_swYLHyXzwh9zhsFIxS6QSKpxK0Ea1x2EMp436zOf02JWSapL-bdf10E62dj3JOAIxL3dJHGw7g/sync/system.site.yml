@@ -1,0 +1,14 @@
+uuid: 28112113-5a11-49cf-9515-8b421c80cba8
+name: Drupal
+mail: info@rufzeichen-online.de
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: de
+default_langcode: de
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

@@ -1,0 +1,72 @@
+uuid: 8b8c313f-38ea-44b9-a45a-07ab8f02059a
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.people_import.field_e_mail
+    - field.field.node.people_import.field_first_name
+    - field.field.node.people_import.field_gender
+    - field.field.node.people_import.field_ip_address
+    - field.field.node.people_import.field_last_name
+    - field.field.node.people_import.field_person_id
+    - node.type.people_import
+  module:
+    - options
+    - user
+id: node.people_import.default
+targetEntityType: node
+bundle: people_import
+mode: default
+content:
+  field_e_mail:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_first_name:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_gender:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_ip_address:
+    weight: 107
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_last_name:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_person_id:
+    weight: 105
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,22 @@
+uuid: 96de9eeb-b56e-4288-bea2-ce20d06797d8
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.people_import
+id: node.people_import.promote
+field_name: promote
+entity_type: node
+bundle: people_import
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

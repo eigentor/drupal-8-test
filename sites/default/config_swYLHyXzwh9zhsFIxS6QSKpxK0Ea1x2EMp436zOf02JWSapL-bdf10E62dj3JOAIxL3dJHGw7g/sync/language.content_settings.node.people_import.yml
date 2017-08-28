@@ -1,0 +1,11 @@
+uuid: f5046819-d120-4b74-b81d-b3242f11de4e
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.people_import
+id: node.people_import
+target_entity_type_id: node
+target_bundle: people_import
+default_langcode: site_default
+language_alterable: false
