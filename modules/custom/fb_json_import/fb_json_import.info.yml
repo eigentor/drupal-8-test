@@ -3,3 +3,7 @@ type: module
 description: JSON Import with Migrate module
 core: 8.x
 package: franke_bornberg
+
+config_devel:
+ install:
+   - migrate_plus.migration.fb_persons

@@ -1,0 +1,47 @@
+# Migration Configuration for Persons
+id: fb_persons
+label: Persons
+migration_group: Persons
+migration_dependencies: {}
+
+source:
+  plugin: json
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  path: /data/test_data.json
+  headers:
+    Accept: 'application/json'
+  identifier: id
+  identifierDepth: 0
+  fields:
+    - id
+    - first_name
+    - last_name
+    - email
+    - gender
+    - ip_address
+
+destination:
+  plugin: entity:node
+
+process:
+  type:
+    plugin: default_value
+    default_value: people_import
+
+  title: last_name
+  field_person_id: id
+  field_first_name: first_name
+  field_last_name: last_name
+  field_e_mail: email
+  field_gender: gender
+  field_ip_address: ip_address
+
+  sticky:
+    plugin: default_value
+    default_value: 0
+
+  uid:
+    plugin: default_value
+    default_value: 0
+
