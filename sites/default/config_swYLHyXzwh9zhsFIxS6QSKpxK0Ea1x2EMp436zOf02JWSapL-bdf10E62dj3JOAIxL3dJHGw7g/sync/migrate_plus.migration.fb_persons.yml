@@ -11,13 +11,15 @@ migration_group: Persons
 label: Persons
 source:
   plugin: url
-  data_fetcher_plugin: file
+  data_fetcher_plugin: http
   data_parser_plugin: json
-  path: /data/test_data.json
+  urls: 'http://drupal-8-test.dev/modules/custom/fb_json_import/data/test_data.json'
   headers:
     Accept: application/json
-  identifier: id
-  identifierDepth: 0
+  ids:
+    id:
+      type: integer
+  item_selector: persons/
   fields:
     - id
     - first_name

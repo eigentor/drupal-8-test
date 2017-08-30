@@ -14,7 +14,7 @@ source:
   ids:
     id:
       type: integer
-  item_selector: persons
+  item_selector: persons/
   fields:
     - id
     - first_name
