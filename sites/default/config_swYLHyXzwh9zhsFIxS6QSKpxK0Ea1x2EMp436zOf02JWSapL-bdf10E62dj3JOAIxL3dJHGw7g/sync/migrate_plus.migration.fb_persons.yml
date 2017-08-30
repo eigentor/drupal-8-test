@@ -1,16 +1,21 @@
-# Migration Configuration for Persons
+uuid: a297d7fa-ffe7-47a9-bca6-1704091ebb28
+langcode: de
+status: true
+dependencies: {  }
 id: fb_persons
-label: Persons
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
 migration_group: Persons
-migration_dependencies: {}
-
+label: Persons
 source:
   plugin: url
-  data_fetcher_plugin: http
+  data_fetcher_plugin: file
   data_parser_plugin: json
   path: /data/test_data.json
   headers:
-    Accept: 'application/json'
+    Accept: application/json
   identifier: id
   identifierDepth: 0
   fields:
@@ -20,15 +25,10 @@ source:
     - email
     - gender
     - ip_address
-
-destination:
-  plugin: entity:node
-
 process:
   type:
     plugin: default_value
     default_value: people_import
-
   title: last_name
   field_person_id: id
   field_first_name: first_name
@@ -36,12 +36,12 @@ process:
   field_e_mail: email
   field_gender: gender
   field_ip_address: ip_address
-
   sticky:
     plugin: default_value
     default_value: 0
-
   uid:
     plugin: default_value
     default_value: 0
-
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

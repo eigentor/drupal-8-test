@@ -1,0 +1,10 @@
+uuid: 02aa703a-3bd8-4993-9211-7aefd2d47ec3
+langcode: de
+status: true
+dependencies: {  }
+id: Persons
+label: Persons
+description: ''
+source_type: null
+module: null
+shared_configuration: null

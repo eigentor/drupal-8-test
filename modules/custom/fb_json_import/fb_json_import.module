@@ -1,9 +1,16 @@
 <?php
 
+function fb_json_import_preprocess_page(&$variables) {
+
+}
+
 /**
  * Implements hook_migration_plugins_alter().
  */
 function fb_json_import_migration_plugins_alter(array &$migrations) {
   // Define the path of source files for the persons migration as
-  $migrations['fb_persons']['source']['path'] = __DIR__ . $migrations['fb_persons']['source']['path'];
+
+  global $base_url;
+
+  $migrations['fb_persons']['source']['path'] = $base_url . __DIR__ . $migrations['fb_persons']['source']['path'];
 }
